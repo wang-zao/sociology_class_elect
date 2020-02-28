@@ -1,0 +1,102 @@
+.box {
+  width: 40vw;
+  height: auto;
+  min-height: 30vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 0.8em;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0.5em 0px #00000060;
+  -moz-box-shadow: 0 0 0.5em 0px #00000060;
+  box-shadow: 0 0 0.5em 0px #00000060;
+
+}
+
+
+.container{
+  margin: 0px auto;
+	display: inline;
+  text-align: center;
+}
+
+.content{
+  text-align: center;
+}
+
+table {
+  text-align:center;
+  margin: auto;
+}
+
+.title{
+  margin: 0px auto;
+	display: block;
+  text-align: center;
+  color: white;
+}
+
+body,h1,h2,h3,h4,h5,ul,ol,form{
+  margin:0;
+  padding:0px;
+  display: inline;
+}
+
+html{
+  display: none;
+}
+
+
+.explain {
+  padding: 1.2em;
+  font-size: smaller;
+  vertical-align: text-bottom;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  text-align-last:left;
+	text-align:justify;
+}
+
+h3 {
+  position: absolute;
+  display: block;
+  padding: 1em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.end {
+  font-size: small;
+  color: white;
+}
+
+.end-b {
+  font-size: xx-small;
+  color: white;
+}
+
+
+.bk{
+  background-color: #39437a;
+}
+
+#box1 {
+  background-color: rgb(238, 255, 234);
+}
+
+#box2 {
+  background-color: rgb(253, 239, 222);
+}
+
+#box3 {
+  background-color: rgb(254, 255, 230);
+}
+
+#box4 {
+  background-color: azure;
+}

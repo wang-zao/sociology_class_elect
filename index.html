@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no"/>
+  <title>make kuaxuan better</title>
+  <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body class="bk">
+  <div class="container">
+    <div class="title">
+      <br/>
+      <br/>
+      <h1>Make 跨选 Better</h1>
+      <br/>
+      <p>社会学系跨院系选课提案小站</p>
+      <br/>
+    </div>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <div class="box" id="box1">
+              <br/>
+              <h3>跨选机制建议</h3>
+              <p class="explain">
+                写点与培养方案、选课系统、外系联络等有关的机制性建议
+              </p>
+            </div>
+          </td>
+          <td>
+            <div class="box" id="box2">
+              <h3>跨选课程投票</h3>
+              <p class="explain">
+                填写问卷，给您希望在培养方案中增加的课程投票
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="box" id="box3">
+              <h3>荐课原因文档</h3>
+              <p class="explain">
+                基于见闻或兴趣，写几句推荐好课的原因，也可补充问卷之外的课
+              </p>
+            </div>
+          </td>
+          <td>
+            <div class="box" id="box4">
+              <h3>课程参考列表</h3>
+              <p class="explain">
+                浏览所有可能纳入跨选范围的课程汇总，包括课程评估统计，以供参考
+              </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="title">
+      <br />
+      <p class= "end-b">——————————————————————</p>
+      <p class="end">pku sociology</p>
+      <p class="end-b">Copyright no copyright. 2020.02.</p>
+    </div>
+  </div>
+  <script>
+    (function(win) {
+        var doc = win.document,
+            scale = 16,
+            $body = doc.getElementsByTagName('body')[0],
+            $html = doc.getElementsByTagName('html')[0],
+            windowWidth = doc.documentElement && doc.documentElement.clientWidth || doc.body.clientWidth || win.innerWidth,
+            windowHeight = document.documentElement && document.documentElement.clientHeight || documentElement.body.clientHeight || window.innerHeight,
+            deviceAgent = navigator.userAgent.toLowerCase();
+        if ( deviceAgent.match( /(iphone|ipod|ipad|android|windows\s*phone|symbianos)/ ) ) {
+            try{
+                if ( window.localStorage && window.localStorage.getItem('scale_greatboy') ) {
+                    scale = window.localStorage.getItem('scale_greatboy');
+                } else {
+                    scale = parseFloat(windowWidth * 16 / 320);
+                    if (windowHeight > windowWidth) {
+                        window.localStorage && window.localStorage.setItem('scale_greatboy', scale);
+                    }
+                }
+            }catch(e){}
+            if (deviceAgent.match(/android\s*2.3/) && deviceAgent.match(/micromessenger/)) {
+                scale = 16;
+            }
+            $html.style.fontSize = scale + 'px';
+            $html.style.display = 'block';
+        } else {
+            window.onresize = function(){
+                windowWidth = doc.documentElement && doc.documentElement.clientWidth || doc.body.clientWidth || win.innerWidth;
+                scale = parseFloat(windowWidth * 16 / 320);
+                $html.style.fontSize = scale + 'px';
+            };
+            scale = parseFloat(windowWidth * 16 / 320);
+            $html.style.fontSize = scale + 'px';
+            $html.style.display = 'block';
+        }
+        $body.style.width = '20rem';
+    })(window);
+    </script>
+</body>
+</html>
