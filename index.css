@@ -11,7 +11,9 @@
   -webkit-box-shadow: 0 0 0.5em 0px #00000060;
   -moz-box-shadow: 0 0 0.5em 0px #00000060;
   box-shadow: 0 0 0.5em 0px #00000060;
-
+  display: block;
+  font-style: normal;
+  color: #000000;
 }
 
 
@@ -98,4 +100,20 @@ h3 {
 
 #box4 {
   background-color: azure;
+}
+
+#box1:active {
+  background-color: rgb(210, 240, 204);
+}
+
+#box2:active {
+  background-color: rgb(236, 216, 191);
+}
+
+#box3:active {
+  background-color: rgb(233, 235, 197);
+}
+
+#box4:active {
+  background-color: rgb(216, 240, 240);
 }
